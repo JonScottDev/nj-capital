@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .hero__container {
+  background: url(../public/images/hero.png);
+  background-position: center;
+  background-size: cover;
+} */
