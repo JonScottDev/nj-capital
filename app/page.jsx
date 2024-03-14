@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import CallToAction from "@/components/CallToAction";
 import AboutSection from "@/components/AboutSection";
+import ServiceSection from "@/components/ServiceSection";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutSection />
       <CallToAction />
+      <ServiceSection />
     </>
   );
 };

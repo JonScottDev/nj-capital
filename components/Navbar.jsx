@@ -5,9 +5,7 @@ const Navbar = () => {
     <header className="absolute w-full z-50">
       <nav className="max-w-screen-xl flex flex-row flex-wrap justify-between items-center my-3 mx-auto lg:items-start text-white">
         <Link href="/">
-          <span className=" font-bold text-2xl text-white underline">
-            N&J Capital
-          </span>
+          <span className=" font-bold text-2xl text-white">N&J Capital</span>
         </Link>
         {/* Hamburger for mobile */}
         <div className="inline-block h-8 mr-3 lg:hidden">
@@ -60,16 +58,16 @@ const Navbar = () => {
           className="w-full hidden py-8 lg:flex lg:w-auto lg:py-0 lg:items-center rounded-br-5xl shadow-md lg:shadow-none border-b-2 lg:border-0 border-blue-800 "
         >
           <ul className="flex flex-col lg:pt-1.5 gap-y-4 ml-auto text-lg text-black-400 font-semibold lg:flex-row">
-            <li className="mx-6 w-mc hover:text-blue-600">
+            <li className="mx-6 w-mc hover:text-blue-200">
               <a href="/car-insurance.html">Home</a>
             </li>
-            <li className="mx-6 w-mc hover:text-blue-600">
+            <li className="mx-6 w-mc hover:text-blue-200">
               <a href="/blog.html">Our Company</a>
             </li>
-            <li className="mx-6 w-mc hover:text-blue-600">
+            <li className="mx-6 w-mc hover:text-blue-200">
               <a href="/about.html">Projects</a>
             </li>
-            <li className="mx-6 w-mc hover:text-blue-600">
+            <li className="mx-6 w-mc hover:text-blue-200">
               <a href="/contact.html">Contact Us</a>
             </li>
           </ul>
