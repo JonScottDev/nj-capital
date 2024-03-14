@@ -2,8 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .hero__container {
-  background: url(../public/images/hero.png);
-  background-position: center;
-  background-size: cover;
-} */
+.quote-marks::before {
+  content: "\“";
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 6rem;
+  margin: 0px;
+  margin-top: -6rem;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  -webkit-text-stroke-color: #000;
+}
+
+@media (min-width: 1024px) {
+  .quote-marks::before {
+    margin: -5rem;
+  }
+}
+
+.quote-marks::after {
+  content: "\”";
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 6rem;
+  margin-top: 7rem;
+  position: absolute;
+  top: -20px;
+  right: 60px;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  -webkit-text-stroke-color: #000;
+}
