@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-16 border-t border-blue-50 bg-gray-600">
+    <footer className="py-16 border-blue-50 bg-gray-800">
       <div className="flex flex-col lg:flex-row items-center justify-between mx-auto max-w-screen-2xl">
         <div className="flex items-center">
           {/* Logo */}
@@ -13,7 +13,7 @@ const Footer = () => {
             <span className=" font-bold text-2xl text-white">N&J Capital</span>
           </Link>
         </div>
-        <ul className="flex flex-col lg:flex-row items-center text-sm font-medium text-white py-12 lg:py-0">
+        <ul className="flex flex-col lg:flex-row items-center text-md font-medium text-white py-12 lg:py-0">
           <li className="mx-7 hover:text-blue-200 mb-2 lg:mb-0">
             <a href="/car-insurance.html">Home</a>
           </li>

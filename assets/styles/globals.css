@@ -33,3 +33,262 @@
   color: rgba(0, 0, 0, var(--tw-text-opacity));
   -webkit-text-stroke-color: #000;
 }
+
+form {
+  display: block;
+  margin-top: 1rem;
+  overflow: hidden;
+  /*  STATUS COLOURS  */
+  --error: rgba(239, 68, 68, 1);
+  --success: rgba(16, 185, 129, 1);
+  //--underline: rgba(209, 250, 229, 1);
+  --underline: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+form select {
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity));
+  border-radius: 0.125rem;
+  border-width: 1px;
+  margin-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+form div {
+  position: relative;
+}
+
+form .input-animated input {
+  background-color: transparent;
+  border-style: none;
+  display: block;
+  margin-bottom: 1rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1.25rem;
+  width: 100%;
+}
+
+form .input-animated input::-moz-placeholder {
+  color: transparent;
+}
+
+form .input-animated input:-ms-input-placeholder {
+  color: transparent;
+}
+
+form .input-animated input::placeholder {
+  color: transparent;
+}
+
+form .input-animated input,
+form .input-animated label {
+  --tw-text-opacity: 1;
+  //color: rgba(243, 244, 246, var(--tw-text-opacity));
+  color: #000;
+}
+
+form .input-animated label {
+  --tw-border-opacity: 1;
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity));
+  border-bottom-width: 1px;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+form .input-animated label:after {
+  content: "";
+  bottom: -2px;
+  border-color: var(--underline);
+  border-bottom-width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-x: -100%;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+}
+
+form .input-animated label span {
+  position: absolute;
+  left: 0px;
+  bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* only works for adjacent elements below the initial element */
+
+form .input-animated input:not(:-moz-placeholder-shown) + label:after,
+form textarea:not(:-moz-placeholder-shown) {
+  border-color: var(--error);
+}
+
+form .input-animated input:not(:-ms-input-placeholder) + label:after,
+form textarea:not(:-ms-input-placeholder) {
+  border-color: var(--error);
+}
+
+form .input-animated input:not(:placeholder-shown) + label:after,
+form textarea:not(:placeholder-shown) {
+  border-color: var(--error);
+}
+
+form textarea {
+  background-color: transparent;
+  --tw-border-opacity: 1;
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity));
+  border-width: 1px;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: #000;
+}
+
+form textarea:focus-visible {
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+form
+  .input-animated
+  input:not(:-moz-placeholder-shown)
+  + .label-name
+  .content-name,
+form
+  .input-animated
+  input:not(:-moz-placeholder-shown)
+  + .label-email
+  .content-email,
+form
+  .input-animated
+  input:not(:-moz-placeholder-shown)
+  + .label-phone
+  .content-phone {
+  color: var(--error);
+}
+
+form
+  .input-animated
+  input:not(:-ms-input-placeholder)
+  + .label-name
+  .content-name,
+form
+  .input-animated
+  input:not(:-ms-input-placeholder)
+  + .label-email
+  .content-email,
+form
+  .input-animated
+  input:not(:-ms-input-placeholder)
+  + .label-phone
+  .content-phone {
+  color: var(--error);
+}
+
+form .input-animated input:not(:placeholder-shown) + .label-name .content-name,
+form
+  .input-animated
+  input:not(:placeholder-shown)
+  + .label-email
+  .content-email,
+form
+  .input-animated
+  input:not(:placeholder-shown)
+  + .label-phone
+  .content-phone {
+  color: var(--error);
+}
+
+form .input-animated input:valid + .label-name .content-name,
+form .input-animated input:valid + .label-email .content-email,
+form .input-animated input:valid + .label-phone .content-phone {
+  color: var(--success);
+}
+
+form .input-animated input:valid + label:after,
+form textarea:valid {
+  border-color: var(--success);
+}
+
+form .input-animated input:not(:-moz-placeholder-shown) + label span {
+  transform: translateY(-200%);
+}
+
+form .input-animated input:not(:-ms-input-placeholder) + label span {
+  transform: translateY(-200%);
+}
+
+form .input-animated input:focus + label span,
+form .input-animated input:valid + label span,
+form .input-animated input:not(:placeholder-shown) + label span {
+  transform: translateY(-200%);
+}
+
+form .input-animated input:not(:-moz-placeholder-shown) + label span {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+form .input-animated input:not(:-ms-input-placeholder) + label span {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+form .input-animated input:focus + label span,
+form .input-animated input:valid + label span,
+form .input-animated input:not(:placeholder-shown) + label span {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+form input:not(:-moz-placeholder-shown) + label:after {
+  transform: translateX(0%);
+}
+
+form input:not(:-ms-input-placeholder) + label:after {
+  transform: translateX(0%);
+}
+
+form .input-animated input:focus + label:after,
+form input:valid + label:after,
+form input:not(:placeholder-shown) + label:after {
+  transform: translateX(0%);
+}
+
+form input:invalid {
+  --tw-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
