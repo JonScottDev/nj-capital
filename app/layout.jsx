@@ -18,7 +18,11 @@ const merriweather_sans = Merriweather_Sans({
 
 const MainLayout = ({ children }) => {
   return (
-    <html lang="en" className={merriweather_sans.className}>
+    <html
+      lang="en"
+      className={merriweather_sans.className}
+      style={{ scrollBehavior: "smooth" }}
+    >
       <body>
         <Navbar />
         <main>{children}</main>

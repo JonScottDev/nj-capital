@@ -1,5 +1,7 @@
-import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/images/logow.svg";
+import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,10 +12,10 @@ const Footer = () => {
         <div className="flex items-center">
           {/* Logo */}
           <Link href="/">
-            <span className=" font-bold text-2xl text-white">N&J Capital</span>
+            <Image src={logo} width={100} height={95} />
           </Link>
         </div>
-        <ul className="flex flex-col lg:flex-row items-center text-md font-medium text-white py-12 lg:py-0">
+        {/* <ul className="flex flex-col lg:flex-row items-center text-md font-medium text-white py-12 lg:py-0">
           <li className="mx-7 hover:text-blue-200 mb-2 lg:mb-0">
             <a href="/car-insurance.html">Home</a>
           </li>
@@ -26,7 +28,7 @@ const Footer = () => {
           <li className="mx-7 hover:text-blue-200 mb-2 lg:mb-0">
             <a href="/contact.html">Contact Us</a>
           </li>
-        </ul>
+        </ul> */}
         <div className="flex text-blue-400">
           {/* Twitter Logo */}
           <a className="hover:text-blue-200" href="/">

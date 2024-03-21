@@ -23,7 +23,7 @@ const CallToAction = () => {
         <div className="md:block text-center">
           <Link
             className="inline-block uppercase text-center font-semibold px-5 py-2 lg:px-10 border border-gray-500 text-gray-50 mx-2 lg:mx-8 hover:border-gray-50 hover:shadow-md focus:ring-2 focus:ring-blue-300"
-            href="/contact"
+            href="#contact-form"
           >
             Get Started Today!
           </Link>
