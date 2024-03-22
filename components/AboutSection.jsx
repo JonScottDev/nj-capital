@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "@/public/images/profile.jpg";
+import profilePic from "@/assets/images/profile.jpg";
 
 const AboutSection = () => {
   return (
@@ -18,8 +18,9 @@ const AboutSection = () => {
               {/* <img className="w-full h-full object-cover" src="./images/Testimonials/man.png" alt=""> */}
               <Image
                 src={profilePic}
-                width={300}
-                height={300}
+                width="0"
+                height="0"
+                style={{ width: "300px", height: "auto" }}
                 className="rounded-lg mx-auto"
                 alt="michele waters"
               />

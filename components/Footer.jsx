@@ -12,7 +12,13 @@ const Footer = () => {
         <div className="flex items-center pb-5 md:pb-0">
           {/* Logo */}
           <Link href="/">
-            <Image src={logo} width={100} height={95} alt="n&j capital" />
+            <Image
+              src={logo}
+              width="0"
+              height="0"
+              style={{ width: "100px", height: "auto" }}
+              alt="n&j capital"
+            />
           </Link>
         </div>
         {/* <ul className="flex flex-col lg:flex-row items-center text-md font-medium text-white py-12 lg:py-0">

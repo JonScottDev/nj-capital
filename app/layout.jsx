@@ -23,7 +23,7 @@ const MainLayout = ({ children }) => {
       className={merriweather_sans.className}
       style={{ scrollBehavior: "smooth" }}
     >
-      <body>
+      <body suppressHydrationWarning={true}>
         <Navbar />
         <main>{children}</main>
         <Footer />

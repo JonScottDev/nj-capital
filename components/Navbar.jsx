@@ -1,13 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/images/logow.svg";
+import logo from "@/assets/images/logow.svg";
 
 const Navbar = () => {
   return (
     <header className="absolute w-full z-50">
       <nav className="max-w-screen-xl flex flex-row flex-wrap justify-center items-center my-3 mx-auto lg:items-start text-white">
         <Link href="/">
-          <Image src={logo} width={100} height={100} alt="n&j capital" />
+          <Image
+            src={logo}
+            width="0"
+            height="0"
+            alt="n&j capital"
+            priority={true}
+            style={{ width: "100px", height: "auto" }}
+          />
         </Link>
         {/* Hamburger for mobile */}
         {/* <div className="inline-block h-8 mr-3 lg:hidden">
