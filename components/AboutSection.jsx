@@ -1,6 +1,3 @@
-import Image from "next/image";
-import profilePic from "@/assets/images/profile.jpg";
-
 const AboutSection = () => {
   return (
     <section>
@@ -16,8 +13,8 @@ const AboutSection = () => {
           <div>
             <div className="mx-auto">
               {/* <img className="w-full h-full object-cover" src="./images/Testimonials/man.png" alt=""> */}
-              <Image
-                src={profilePic}
+              <img
+                src="/images/profile.jpg"
                 width="0"
                 height="0"
                 style={{ width: "300px", height: "auto" }}

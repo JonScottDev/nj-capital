@@ -1,12 +1,11 @@
 import Link from "next/link";
-import bg from "@/assets/images/hero.png";
 
 const HeroSection = () => {
   return (
     <section
       className="hero__container h-screen flex items-center justify-center"
       style={{
-        backgroundImage: `url(${bg.src})`,
+        backgroundImage: `url('/images/hero.png')`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}

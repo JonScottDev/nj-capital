@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
-import logo from "@/assets/images/logow.svg";
+// import Image from "next/image";
+// import logo from "@/assets/images/logow.svg";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="flex items-center pb-5 md:pb-0">
           {/* Logo */}
           <Link href="/">
-            <Image
-              src={logo}
+            <img
+              src="/images/Logow.svg"
               width="0"
               height="0"
               style={{ width: "100px", height: "auto" }}

@@ -1,12 +1,11 @@
 import Link from "next/link";
-import bg from "@/assets/images/cta_img.jpg";
 
 const CallToAction = () => {
   return (
     <section
       className="chiropractor_select relative h-full py-24 lg:h-96 flex flex-col items-center justify-center shadow-inner bg-fixed"
       style={{
-        backgroundImage: `url(${bg.src})`,
+        backgroundImage: `url('/images/cta_img.jpg')`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}

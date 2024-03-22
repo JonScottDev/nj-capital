@@ -1,14 +1,14 @@
 import Link from "next/link";
-import Image from "next/image";
-import logo from "@/assets/images/logow.svg";
+// import Image from "next/image";
+// import logo from "@/assets/images/logow.svg";
 
 const Navbar = () => {
   return (
     <header className="absolute w-full z-50">
       <nav className="max-w-screen-xl flex flex-row flex-wrap justify-center items-center my-3 mx-auto lg:items-start text-white">
         <Link href="/">
-          <Image
-            src={logo}
+          <img
+            src="/images/Logow.svg"
             width="0"
             height="0"
             alt="n&j capital"

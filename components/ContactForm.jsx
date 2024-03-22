@@ -1,5 +1,4 @@
 "use client";
-import bg from "@/assets/images/contact-bg.jpg";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 
@@ -72,7 +71,7 @@ const ContactForm = () => {
       id="contact-form"
       className="relative lg:h-screen bg-fixed flex justify-center items-center "
       style={{
-        backgroundImage: `url(${bg.src})`,
+        backgroundImage: `url('/images/contact-bg.jpg')`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
