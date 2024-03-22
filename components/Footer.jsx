@@ -32,7 +32,7 @@ const Footer = () => {
             <a href="/about.html">Projects</a>
           </li>
           <li className="mx-7 hover:text-blue-200 mb-2 lg:mb-0">
-            <a href="/contact.html">Contact Us</a>
+            <a href="/contact.html">Contact </a>
           </li>
         </ul> */}
         <div className="flex text-blue-400">
