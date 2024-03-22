@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "@/assets/images/profile.jpg";
+import profilePic from "@/public/images/profile.jpg";
 
 const AboutSection = () => {
   return (
@@ -21,6 +21,7 @@ const AboutSection = () => {
                 width={300}
                 height={300}
                 className="rounded-lg mx-auto"
+                alt="michele waters"
               />
             </div>
             <div className="flex flex-col mt-1 text-sm lg:text-base">

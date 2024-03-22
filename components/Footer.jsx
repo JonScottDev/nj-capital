@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/images/logow.svg";
+import logo from "@/public/images/logow.svg";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex items-center pb-5 md:pb-0">
           {/* Logo */}
           <Link href="/">
-            <Image src={logo} width={100} height={95} />
+            <Image src={logo} width={100} height={95} alt="n&j capital" />
           </Link>
         </div>
         {/* <ul className="flex flex-col lg:flex-row items-center text-md font-medium text-white py-12 lg:py-0">
@@ -45,7 +45,10 @@ const Footer = () => {
             </svg>
           </a>
           {/* Facebook Logo */}
-          <a className="hover:text-blue-200" href="/">
+          <a
+            className="hover:text-blue-200"
+            href="https://www.facebook.com/michelelwaters"
+          >
             <svg
               className="mx-4 fill-current"
               width="20"
