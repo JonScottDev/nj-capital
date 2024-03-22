@@ -70,7 +70,7 @@ const ContactForm = () => {
   return (
     <section
       id="contact-form"
-      className="relative h-screen bg-fixed flex justify-center items-center"
+      className="relative lg:h-screen bg-fixed flex justify-center items-center "
       style={{
         backgroundImage: `url(${bg.src})`,
         backgroundPosition: "center",
@@ -81,10 +81,10 @@ const ContactForm = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-40 z-10"></div>
       {/* <!-- Contact Info + Form Container --> */}
       <div className="relative lg:flex justify-center z-10 pb-0 lg:pt-40 lg:pb-40 ">
-        <div className="flex flex-col lg:flex-row overflow-hidden lg:shadow-lg bg-white rounded-xl ">
-          <div className="contact_form-first pt-32 pb-16 px-8 lg:px-20 lg:py-12 flex items-center justify-center ">
+        <div className="flex w-full flex-col justify-items-stretch lg:flex-row overflow-hidden lg:shadow-lg bg-white lg:rounded-xl ">
+          <div className="contact_form-first pt-20 md:pt-32 pb-16 px-8 lg:px-20 lg:py-12 flex items-center justify-center ">
             {/* <!-- Contact Info --> */}
-            <div>
+            <div className="w-full text-center lg:text-left">
               <h2 className="text-2xl font-semibold mb-8 text-black">
                 N&J Capital
               </h2>
@@ -92,7 +92,7 @@ const ContactForm = () => {
                 Covering the South East Region
               </h3>
               <div>
-                <div className="flex items-center mb-10">
+                <div className="flex items-center justify-center lg:justify-start mb-10">
                   <div className="p-2 rounded-full mr-6 bg-blue-400">
                     <svg
                       className="text-white fill-current"
@@ -105,7 +105,7 @@ const ContactForm = () => {
                     </svg>
                   </div>
                   <div>
-                    <span className="block text-lg font-medium text-black">
+                    <span className="block text-lg font-medium  text-black">
                       Telephone Number
                     </span>
                     <span className="block text-sm font-medium text-gray-500">
@@ -114,7 +114,7 @@ const ContactForm = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center mb-10">
+              <div className="flex items-center justify-center lg:justify-start mb-10">
                 <div className="p-2 rounded-full mr-6 bg-blue-400">
                   <svg
                     className="text-white fill-current"
@@ -146,10 +146,10 @@ const ContactForm = () => {
             </div>
           </div>
           {/* <!-- Contact Form --> */}
-          <div className="contact_form-second px-8 lg:px-20 py-20 lg:pt-12 lg:pb-20 ">
+          <div className="contact_form-second px-8 lg:px-20 py-10 md:py-20 lg:pt-12 lg:pb-20 ">
             <div className="flex justify-center">
               <div>
-                <h2 className="text-2xl font-semibold mb-3 text-black">
+                <h2 className="text-2xl font-semibold mb-3 text-center lg:text-left text-black">
                   Let's get started!
                 </h2>
                 <span className="text-sm mb-1 text-black">
